@@ -5,9 +5,6 @@ import java.util.Stack;
 /*
  * made by Dominic
  * 
- * Finished
- * last update: 20.07.2022
- * 
  * Creates graphs in dot or html
  */
 
