@@ -36,11 +36,8 @@ public class j2dot {
   InputStream outputstream;
 
   /*
-   * made by Dominic
-   * 
-   * In progress
-   * last update: 14.07.2022
-   * 
+   * made by DominicAlb
+   *
    * Analyzes a java programm and creates a fitting xml diagram with the object
    * composition
    */
@@ -68,18 +65,10 @@ public class j2dot {
         // build java process (Windows)
         proc_java = new ProcessBuilder("cmd.exe", "/c", "cd", dir , "&", "java",
             "-agentlib:jdwp=transport=dt_socket,address=localhost:8888,server=y,suspend=y", pack + "." + m_mainclass);
-        // System.out.println("java
-        // -agentlib:jdwp=transport=dt_socket,address=localhost:8888,server=y,suspend=y
-        // " + pack
-        // + "." + m_mainclass);
       } else {
         // build java process (Windows)
         proc_java = new ProcessBuilder("cmd.exe", "/c", "cd", dir , "&","java",
             "-agentlib:jdwp=transport=dt_socket,address=localhost:8888,server=y,suspend=y", m_mainclass);
-        // System.out.println(
-        // "java
-        // -agentlib:jdwp=transport=dt_socket,address=localhost:8888,server=y,suspend=y
-        // " + m_mainclass);
       }
       // build jdb process added to java process (Windows)
       proc_jdb = new ProcessBuilder("jdb", "-connect", "com.sun.jdi.SocketAttach:hostname=localhost,port=8888");
