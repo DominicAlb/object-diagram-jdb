@@ -7,7 +7,6 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Scanner;
 
 import javax.swing.Box;
 import javax.swing.JLabel;
@@ -19,7 +18,6 @@ import java.lang.ProcessBuilder;
 
 public class j2dot {
 
-  Scanner m_jdb_out;
   PrintStream m_jdb_in;
   static String m_mainclass;
   static String dir;
@@ -97,10 +95,8 @@ public class j2dot {
       p_java = proc_java.start(); // Process p_java = proc_java.start();
       p_jdb = proc_jdb.start();
 
-      // Scanner
       // to read jdb output
       outputstream = p_jdb.getInputStream();
-      m_jdb_out = new Scanner(outputstream).useDelimiter("\\z|\\n");
 
       // PrintStream
       // to give jdb input commands
@@ -223,7 +219,6 @@ public class j2dot {
     try {
       p_jdb.destroy();
       p_java.destroy();
-      m_jdb_out.close();
       m_jdb_in.close();
       proc_java = null;
       proc_jdb = null;
