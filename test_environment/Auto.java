@@ -1,4 +1,4 @@
-package Test;
+package test_environment;
 
 public class Auto {
 
