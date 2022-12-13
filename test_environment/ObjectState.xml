@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<code>
+    <step id="0">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+    </step>
+    <step id="1">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+    </step>
+    <step id="2">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="3">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="4">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="5">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">null</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="6">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="7">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">instance</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="8">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="9">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="10">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="11">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">76ed5528</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="12">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">76ed5528</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="13">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">76ed5528</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">null</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="14">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">76ed5528</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800 4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+    </step>
+    <step id="15">
+        <object id="76ed5528" name="mensch1" type="Mensch">
+            <attr id="lebendig" type="+ boolean">false</attr>
+            <attr id="verletzt" type="+ boolean">true</attr>
+            <attr id="inAuto" type="+ Auto">36baf30c</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="2c7b84de" name="mensch2" type="Mensch">
+            <attr id="lebendig" type="+ boolean">true</attr>
+            <attr id="verletzt" type="+ boolean">false</attr>
+            <attr id="inAuto" type="+ Auto">4617c264</attr>
+            <method args="boolean lebendig" id="+ setLebendig">void</method>
+            <method args="boolean verletzt" id="+ setVerletzt">void</method>
+            <method args="" id="+ getInAuto">Auto</method>
+            <method args="Auto inAuto" id="+ setInAuto">void</method>
+        </object>
+        <object id="5acf9800" name="autoA" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">4617c264</attr>
+            <attr id="anzTueren" type="+ int">4</attr>
+            <attr id="mensch1" type="+ Mensch">2c7b84de</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="4617c264" name="autoB" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">2</attr>
+            <attr id="mensch1" type="+ Mensch">76ed5528</attr>
+            <attr id="beschaedigt" type="+ boolean">true</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object id="36baf30c" name="autoC" type="Auto">
+            <attr id="siehtAutos" type="+ Auto[]">[5acf9800 4617c264]</attr>
+            <attr id="beschAuto" type="+ Auto">null</attr>
+            <attr id="anzTueren" type="+ int">6</attr>
+            <attr id="mensch1" type="+ Mensch">null</attr>
+            <attr id="beschaedigt" type="+ boolean">false</attr>
+            <method args="int anzTüren" id="+ setAnzTueren">void</method>
+            <method args="" id="+ getMensch1">Mensch</method>
+            <method args="Mensch mensch1" id="+ setMensch1">void</method>
+            <method args="" id="+ getBeschAuto">Auto</method>
+            <method args="Auto beschAuto" id="+ setBeschAuto">void</method>
+            <method args="" id="+ getSiehtAutos">Auto[]</method>
+            <method args="Auto[] siehtAutos" id="+ setSiehtAutos">void</method>
+            <method args="boolean beschädigt" id="+ setBeschädigt">void</method>
+            <method args="" id="+ getAutosImUnfall">Auto[]</method>
+        </object>
+        <object name="i" type="int">2</object>
+        <object name="d" type="double">3.5</object>
+    </step>
+</code>
