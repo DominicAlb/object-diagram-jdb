@@ -31,10 +31,6 @@ import org.xml.sax.SAXException;
 
 /*
  * made by Dominic
- * 
- * Finished
- * last update: 20.07.2022
- * 
  * Creates XML Files from object schemes
  * Can read those and turn them into a html graph or an dot graph
  * Here: html
