@@ -348,7 +348,7 @@ public class j2dot {
     return attrValues;
   }
 
-  // get memory adresses from array
+  // get object adresses from array
   private String getObjectIdsFromArray(String objName) throws InterruptedException, IOException {
     jdb_exc("print " + objName + ".length");
     String length = jdb_getResponse().split("=")[1].replace("main[1]", "").trim();
@@ -361,7 +361,7 @@ public class j2dot {
     return ret;
   }
 
-  // get memory adress
+  // get object adress
   private String getObjectId(String objName) throws InterruptedException, IOException {
     jdb_exc("eval " + objName);
     String[] idps = jdb_getResponse().split("\"");
