@@ -1,4 +1,4 @@
-package Test;
+package test_environment;
 @SuppressWarnings("unused")
 public class Test {
     
