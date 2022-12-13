@@ -9,8 +9,7 @@ import java.util.HashMap;
 
 /*
  * 
- * Finished 14.07.2022
- * made by Dominic
+ * made by DominicAlb
  * 
  * Analyzes the class composition and creates schemes for the object information
  * which you can use for example to create a history diagram or an object diagram
