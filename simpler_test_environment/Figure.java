@@ -48,6 +48,10 @@ class Gigure
     int sum = bar_i + bar_ii;
     System.out.println("Summe:"+sum);
   }
+  
+  void multiply(int a, int b) {
+    return (a*b); 
+  }
 
 }
 
