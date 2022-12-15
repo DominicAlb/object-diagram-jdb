@@ -47,11 +47,9 @@ public class j2dot {
       if (pack != null) {
         compJavaFile = new ProcessBuilder("cmd.exe", "/c", "cd", dir , "&", "javac", "-g",
             pack + "\\" + m_mainclass + ".java");
-        // System.out.println("javac -g " + pack + "\\" + m_mainclass + ".java");
       } else {
         compJavaFile = new ProcessBuilder("cmd.exe", "/c", "cd", dir, "&", "javac", "-g",
             m_mainclass + ".java");
-        // System.out.println("javac -g " + m_mainclass + ".java");
       }
 
       compJavaFile.redirectErrorStream(true);
@@ -105,7 +103,6 @@ public class j2dot {
       if (pack != null) {
         xmlHandler = new XMLHandler(dir + pack + "\\", "ObjectState");
         analyzer = new Analyzer(dir + pack + "\\", m_mainclass);
-        // Analyzer analyzer = new Analyzer(dir + "Test" + "\\", m_mainclass);
       } else {
         xmlHandler = new XMLHandler(dir, "ObjectState");
         analyzer = new Analyzer(dir, m_mainclass);
@@ -246,7 +243,8 @@ public class j2dot {
     }
     return ret;
   }
-
+  
+  // filters the data out of the jdb response
   private void processData(String data) throws InterruptedException, IOException {
     List<String> dataInfo = new ArrayList<String>();
     List<String> knownVars = getKnownVarsFromData(data);
