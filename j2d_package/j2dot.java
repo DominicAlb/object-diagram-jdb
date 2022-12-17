@@ -199,7 +199,7 @@ public class j2dot {
       }
       System.out.println("Write to XML");
       xmlHandler.writeXML(xmlInfo);
-      xmlHandler.createGraphFromXML();
+      xmlHandler.createHTMLGraphFromXML();
     } catch (Exception e) {
     }
   }
