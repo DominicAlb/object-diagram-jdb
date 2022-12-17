@@ -82,9 +82,9 @@ public class GraphCreator {
                 """;
     }
 
-    public String getFinishedDotGraph() {
+    public String getFinishedDotStep(int stepIndex) {
         dotGraph = dotGraph + dotObjects + dotConnections;
-        return "digraph G {\n" + dotGraph + "\n}";
+        return "digraph G {\n" + dotGraph + "\n\tlabelloc=\"t\";\n\tlabel=\"Step: "+ stepIndex +"\"\n;}";
     }
 
     public void createDotObject(String name, String id, String type, Stack<String> attributes,
@@ -133,6 +133,13 @@ public class GraphCreator {
      * 
      * ///////////////////////////////////////////////////////
      */
+    
+    public void resetHTMLGraph() {
+        this.htmlObjects = "";
+        this.htmlConnections = "var connections0 = [";
+        this.htmlAllStepConnections = new Stack<String>();
+        this.connStepIndex = 1;
+    }
 
     public void createHTMLNode(String name) {
         /*
