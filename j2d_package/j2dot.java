@@ -182,19 +182,17 @@ public class j2dot {
       } else {
         jdb_exc("stop in " + m_mainclass + ".main");
       }
-
       jdb_exc("run");
-      jdb_getResponse();
-      Thread.sleep(50);
+      //skip first loop because nothing is loaded yet
+      jdb_exc("next");
+
       jdb_exc("thread 1");
-      // boolean to skip first loop to get the variable initiated
-      boolean skippedInitiation = false;
+
+      int i = 0;
       while (true) {
         
         // prints here: BREAK by main
-        jdb_exc("next");
-        Thread.sleep(50);
-        String jdb_response = jdb_getResponse();
+        String jdb_response = jdb_exc("next");
 
         // if finished -> print it
         if ((jdb_response) == null) {
@@ -206,22 +204,34 @@ public class j2dot {
           isFinished = true;
         }
         if (isFinished) {
+          System.out.println("Finished");
           clean_up();
           break;
         }
-        jdb_exc("locals");
-        Thread.sleep(50);
-        String data = jdb_getResponse();
-        if(!skippedInitiation) {
-          skippedInitiation = true;
-          continue;
-        }
+        String data = jdb_exc("locals");
+
         processData(data);
+        System.out.println("got Data" + i++);
 
       }
       System.out.println("Write to XML");
       xmlHandler.writeXML(xmlInfo);
-      xmlHandler.createHTMLGraphFromXML();
+      System.out.println(createHTML);
+      if(createHTML) {
+        System.out.println("Creating HTML file");
+        xmlHandler.createHTMLGraphFromXML();
+      }
+      System.out.println(createDot);
+      if(createDot) {
+        System.out.println("Creating Dot file");
+        xmlHandler.createDotGraphFromXML();
+      }
+      System.out.println(delXML);
+      if(delXML) {
+        System.out.println("Deleting XML file");
+        xmlHandler.delXMLFile();
+      }
+      
     } catch (Exception e) {
     }
   }
@@ -229,9 +239,13 @@ public class j2dot {
   // give jdb commands
   // for info:
   // https://docs.oracle.com/javase/7/docs/technotes/tools/windows/jdb.html
-  void jdb_exc(String p_cmd) {
+  String jdb_exc(String p_cmd) throws InterruptedException, IOException {
+    System.out.println("Command: " + p_cmd);
     m_jdb_in.println(p_cmd);
     m_jdb_in.flush();
+
+    String data = jdb_getResponse();
+    return data;
   }
 
   void clean_up() {
@@ -247,7 +261,7 @@ public class j2dot {
 
   // prints response and returns if sort of check is needed
   private String jdb_getResponse() throws InterruptedException, IOException {
-    Thread.sleep(50);
+    Thread.sleep(75);
     String response = jdb_read();
     return response;
   }
@@ -334,8 +348,7 @@ public class j2dot {
   }
 
   private String getPrimitiveValue(String objName) throws InterruptedException, IOException {
-    jdb_exc("dump " + objName);
-    String resp = jdb_getResponse();
+    String resp = jdb_exc("dump " + objName);
     String[] temp = resp.split("=");
     return temp[1].trim();
   }
@@ -343,8 +356,7 @@ public class j2dot {
 
   private HashMap<String, String> getAttrValues(String objName) throws InterruptedException, IOException {
     HashMap<String, String> attrValues = new HashMap<String, String>();
-    jdb_exc("dump " + objName);
-    String resp = jdb_getResponse();
+    String resp = jdb_exc("dump " + objName);
     String[] temp2 = resp.split("\n");
     String[] attribute;
     for (String l : temp2) {
@@ -370,8 +382,7 @@ public class j2dot {
 
   // get object adresses from array
   private String getObjectIdsFromArray(String objName) throws InterruptedException, IOException {
-    jdb_exc("print " + objName + ".length");
-    String length = jdb_getResponse().split("=")[1].replace("main[1]", "").trim();
+    String length = jdb_exc("print " + objName + ".length").split("=")[1].replace("main[1]", "").trim();
     int len = Integer.parseInt(length);
     String ret = "[";
     for(int i = 0; i < len; i++) {
@@ -383,8 +394,7 @@ public class j2dot {
 
   // get object adress
   private String getObjectId(String objName) throws InterruptedException, IOException {
-    jdb_exc("eval " + objName);
-    String[] idps = jdb_getResponse().split("\"");
+    String[] idps = jdb_exc("eval " + objName).split("\"");
     String id = idps[1].split("@")[1];
     return id;
   }
