@@ -256,20 +256,17 @@ public class Analyzer {
                     inClass = true;
                 }
 
-                if (inClass) {
-                    if (inMain) {
-                        if (Character.isUpperCase(line.charAt(0))) {
-                            if (parts[0].equals("String")) {
-                                primitiveVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
-                            } else {
-                                classVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
-                            }
-
-                        } else if (isPrimitive(parts[0])) {
+                if (inClass && inMain) {
+                    if (Character.isUpperCase(line.charAt(0))) {
+                        if (parts[0].equals("String")) {
                             primitiveVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
+                        } else {
+                            classVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
                         }
-                    }
 
+                    } else if (isPrimitive(parts[0])) {
+                        primitiveVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
+                    }
                 }
 
             }
