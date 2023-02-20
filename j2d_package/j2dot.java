@@ -32,6 +32,9 @@ public class j2dot {
   Analyzer analyzer;
   HashMap<String, String> schemes;
   InputStream outputstream;
+  static boolean createHTML;
+  static boolean createDot;
+  static boolean delXML;
 
   /*
    * made by DominicAlb
@@ -121,6 +124,9 @@ public class j2dot {
     JTextField xField = new JTextField(10);
     JTextField pField = new JTextField(10);
     JTextField yField = new JTextField(30);
+    JCheckBox htmlBox = new JCheckBox("HTML", true); 
+    JCheckBox dotBox = new JCheckBox("DOT"); 
+    JCheckBox delXMLBox = new JCheckBox("Delete XML file after process"); 
 
     JPanel myPanel = new JPanel();
     myPanel.add(new JLabel("class:"));
@@ -131,11 +137,27 @@ public class j2dot {
     myPanel.add(Box.createHorizontalStrut(15)); // a spacer
     myPanel.add(new JLabel("dir:"));
     myPanel.add(yField);
+    myPanel.add(htmlBox);
+    myPanel.add(dotBox);
+    myPanel.add(delXMLBox);
 
     int result = JOptionPane.showConfirmDialog(null, myPanel,
         "Please Enter class and path - eg: class: Test  package: <Empty>  dir: C:\\  or class: Test package: Test   dir: C:\\",
         JOptionPane.OK_CANCEL_OPTION);
     if (result == JOptionPane.OK_OPTION) {
+      
+      if (htmlBox.isSelected()) createHTML = true;
+      else createHTML = false;
+      if (dotBox.isSelected()) createDot = true;
+      else createDot = false;
+
+      if(!createHTML && !createDot) {
+        System.out.println("Atleast one setting has to be enabled");
+        return;
+      }
+
+      if (delXMLBox.isSelected()) delXML = true;
+      else delXML = false;
       m_mainclass = xField.getText().trim();
       System.out.println(m_mainclass);
       dir = yField.getText().trim();
