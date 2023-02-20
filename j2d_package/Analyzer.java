@@ -69,6 +69,7 @@ public class Analyzer {
 
             // read though each line of code
             while ((line = bReader.readLine()) != null) {
+                line = line.trim();
                 char isVisible = '+';
                 for (int i = 0; i < line.length(); i++) {
                     if (line.charAt(i) == '{') {
@@ -79,7 +80,7 @@ public class Analyzer {
                     }
                 }
 
-                if (inClass && braces == 0) {
+                if (braces == 0) {
                     inClass = false;
                 }
 
@@ -104,71 +105,61 @@ public class Analyzer {
                 if (parts[0].equals("class") && parts[1].equals(class_type)) {
                     inClass = true;
                 }
-                if (inClass) {
-                    //braces == 1 -> currently in class but not in a method
-                    if (braces == 1) {
-                        if (Character.isUpperCase(line.charAt(0))) {
-                            // check if it is a method else it is a complex var because of uppercase char
-                            if (!parts[1].contains("("))
-                                //put var into attributes list
-                                attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
-                            else if (parts[1].contains("(")) {
-                                // analyze the method and create the part of a scheme
-                                String retType, name, args;
-                                name = parts[1].split("\\(")[0].trim();
-                                retType = parts[0];
-                                if (line.contains("()"))
-                                    args = "";
-                                else
-                                    args = parts[1].split("\\(")[1] + " " + parts[2].split("\\)")[0];
-                                m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
-                                        + ";";
-                            }
-                        // if lower case char check if it a primitive var
-                        } else if (isPrimitive(parts[0])) {
-                            if (!parts[1].contains("("))
-                                attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
-                        // because the public/private/protected is already processed the line can start with void, which is neither a complex var type nor a primitive type
-                        } else if (line.startsWith("void")) {
+                if (inClass && braces == 1) {
+                    if (Character.isUpperCase(line.charAt(0))) {
+                        // check if it is a method else it is a complex var because of uppercase char
+                        if (!parts[1].contains("("))
+                            //put var into attributes list
+                            attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
+                        else if (parts[1].contains("(")) {
+                            // analyze the method and create the part of a scheme
                             String retType, name, args;
-                            String[] mparts = parts[1].split("\\(");
-                            name = mparts[0].trim();
+                            name = parts[1].split("\\(")[0].trim();
+                            System.out.println("Name: " + name);
                             retType = parts[0];
+                            System.out.println("RetType: "+retType);
                             if (line.contains("()"))
                                 args = "";
                             else
-                                args = parts[1].split("\\(")[1] + " " + parts[2].split("\\)")[0];
-                            m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args + ";";
-                        }
-                    //braces == 2 -> currently in a method
-                    } else if (braces == 2) {
-                        if (Character.isUpperCase(line.charAt(0))) {
-                            if (parts[1].contains("(")) {
-                                String retType, name, args;
-                                String[] mparts = parts[1].split("\\(");
-                                name = mparts[0].trim();
-                                retType = parts[0];
-                                if (line.contains("()"))
-                                    args = "";
-                                else
-                                    args = parts[1].split("\\(")[1] + " " + parts[2].split("\\)")[0];
+                                args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
                                 m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
-                                        + ";";
-                            }
-                        } else if (line.startsWith("void")) {
-                            String retType, name, args;
-                            String[] mparts = parts[1].split("\\(");
-                            name = mparts[0].trim();
-                            retType = parts[0];
-                            if (line.contains("()"))
-                                args = "";
-                            else
-                                args = parts[1].split("\\(")[1] + " " + parts[2].split("\\)")[0];
-                            m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
                                     + ";";
                         }
+                    // if lower case char check if it a primitive var
+                    } else if (isPrimitive(parts[0])) {
+                        if (!parts[1].contains("("))
+                            attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
+                        else if (parts[1].contains("(")) {
+                            // analyze the method and create the part of a scheme
+                            String retType, name, args;
+                            name = parts[1].split("\\(")[0].trim();
+                            System.out.println("Name: " + name);
+                            retType = parts[0];
+                            System.out.println("RetType: "+retType);
+                            if (line.contains("()"))
+                                args = "";
+                            else
+                                args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
+                                m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
+                                    + ";";
+                        }
+                    // because the public/private/protected is already processed the line can start with void, which is neither a complex var type nor a primitive type
+                    } else if (line.startsWith("void")) {
+                        String retType, name, args;
+                        String[] mparts = parts[1].split("\\(");
+                        name = mparts[0].trim();
+                        retType = parts[0];
+                        if (line.contains("()"))
+                            args = "";
+                        else
+                            args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
+
+                        m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args + ";";
+                        
                     }
+                
                 }
+                
             }
 
             bReader.close();
