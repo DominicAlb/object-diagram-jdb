@@ -504,6 +504,13 @@ public class XMLHandler {
         transformer.transform(source, result);
 
     }
+    
+    public void delXMLFile() {
+        File f = new File(dir + className + ".xml");
+        if(f.exists()) {
+            f.delete();
+        }
+    }
 
     private boolean isPrimitive(String s) {
         switch (s) {
