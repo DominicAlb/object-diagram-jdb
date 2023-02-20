@@ -49,7 +49,7 @@ class Gigure
     System.out.println("Summe:"+sum);
   }
   
-  void multiply(int a, int b) {
+  int multiply(int a, int b) {
     return (a*b); 
   }
 
