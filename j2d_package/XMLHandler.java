@@ -183,7 +183,7 @@ public class XMLHandler {
                                         String methodArgs = attributeElement.getAttribute("args");
                                         String methodRetType = attributeElement.getTextContent();
 
-                                        objectMethods.add(methodID + "(" + methodArgs + ")" + " : " + methodRetType);
+                                        objectMethods.add(methodID + "(" + methodArgs.replace("°", ", ") + ")" + " : " + methodRetType);
                                     }
 
                                 }
@@ -359,7 +359,7 @@ public class XMLHandler {
                                         String methodArgs = attributeElement.getAttribute("args");
                                         String methodRetType = attributeElement.getTextContent();
 
-                                        objectMethods.add(methodID + "(" + methodArgs + ")" + " : " + methodRetType);
+                                        objectMethods.add(methodID + "(" + methodArgs.replace("°", ", ") + ")" + " : " + methodRetType);
                                     }
 
                                 }
