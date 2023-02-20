@@ -105,59 +105,25 @@ public class Analyzer {
                 if (parts[0].equals("class") && parts[1].equals(class_type)) {
                     inClass = true;
                 }
-                if (inClass && braces == 1) {
-                    if (Character.isUpperCase(line.charAt(0))) {
-                        // check if it is a method else it is a complex var because of uppercase char
-                        if (!parts[1].contains("("))
-                            //put var into attributes list
-                            attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
-                        else if (parts[1].contains("(")) {
-                            // analyze the method and create the part of a scheme
-                            String retType, name, args;
-                            name = parts[1].split("\\(")[0].trim();
-                            System.out.println("Name: " + name);
-                            retType = parts[0];
-                            System.out.println("RetType: "+retType);
-                            if (line.contains("()"))
-                                args = "";
-                            else
-                                args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
-                                m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
-                                    + ";";
-                        }
-                    // if lower case char check if it a primitive var
-                    } else if (isPrimitive(parts[0])) {
-                        if (!parts[1].contains("("))
-                            attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
-                        else if (parts[1].contains("(")) {
-                            // analyze the method and create the part of a scheme
-                            String retType, name, args;
-                            name = parts[1].split("\\(")[0].trim();
-                            System.out.println("Name: " + name);
-                            retType = parts[0];
-                            System.out.println("RetType: "+retType);
-                            if (line.contains("()"))
-                                args = "";
-                            else
-                                args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
-                                m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
-                                    + ";";
-                        }
-                    // because the public/private/protected is already processed the line can start with void, which is neither a complex var type nor a primitive type
-                    } else if (line.startsWith("void")) {
-                        String retType, name, args;
-                        String[] mparts = parts[1].split("\\(");
-                        name = mparts[0].trim();
-                        retType = parts[0];
-                        if (line.contains("()"))
-                            args = "";
-                        else
-                            args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
+                if (!inClass) continue;
 
-                        m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args + ";";
-                        
-                    }
-                
+                // if contains ; -> var
+                if(braces != 1) continue;
+
+
+                if (line.contains(";")) {
+                    attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
+                }
+                else if (line.contains("(") && line.contains(")")) {
+                    String retType, name, args;
+                    name = parts[1].split("\\(")[0].trim();
+                    retType = parts[0];
+                    if (line.contains("()"))
+                        args = "";
+                    else
+                        args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
+                        m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
+                            + ";";
                 }
                 
             }
