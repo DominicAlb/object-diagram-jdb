@@ -1,6 +1,7 @@
 # object-diagram-jdb
 Uses jdb (Java Debugger) to run and analyze code in order to create an object diagram for every step (executed line) in a simple java file.
 This program is just a small school project that I did in my spare time. It's most likely not efficient and maybe won't work in every case.
+The object diagram is based on UML but does not have all the features.
 
 Programmed and tested with JAVA SE 18.0.1 and jdb 18.0 on Windows 11 Pro
 
