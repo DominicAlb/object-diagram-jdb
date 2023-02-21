@@ -72,8 +72,7 @@ public class Analyzer {
             while ((currline = bReader.readLine()) != null) {
                 currline = currline.trim();
                 currline = currline.replace("static", "");
-                System.out.println("Braces: " + braces + " | " + currline);
-                
+            
                 if (braces == 1 && inClass) {
                     method_list += currline + "\n";
                 }                
@@ -94,8 +93,6 @@ public class Analyzer {
             }
 
             method_list = method_list.replace("{", "").replace("}", "");
-
-            System.out.println(method_list);
 
             String[] lines = method_list.split("\n");
 
