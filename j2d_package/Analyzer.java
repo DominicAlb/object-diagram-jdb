@@ -83,6 +83,11 @@ public class Analyzer {
                 if (braces == 0) {
                     inClass = false;
                 }
+                
+                // for simplicity
+                line = line.replace("static", "");
+                
+                if(line.contains("void main(String[] args)")) continue;
 
                 // select the symbol based of the accessibility
                 if (line.trim().startsWith("private"))
