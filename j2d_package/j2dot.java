@@ -211,17 +211,17 @@ public class j2dot {
       }
       System.out.println("Write to XML");
       xmlHandler.writeXML(xmlInfo);
-      System.out.println(createHTML);
+
       if(createHTML) {
         System.out.println("Creating HTML file");
         xmlHandler.createHTMLGraphFromXML();
       }
-      System.out.println(createDot);
+      
       if(createDot) {
         System.out.println("Creating Dot file");
         xmlHandler.createDotGraphFromXML();
       }
-      System.out.println(delXML);
+ 
       if(delXML) {
         System.out.println("Deleting XML file");
         xmlHandler.delXMLFile();
