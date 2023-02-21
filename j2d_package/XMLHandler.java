@@ -233,6 +233,7 @@ public class XMLHandler {
         fw.flush();
         fw.write(gc.getFinishedHTMLStringPart3());
         fw.flush();
+        gc.resetHTMLGraph();
     }
     
     public void createDotGraphFromXML() throws SAXException, IOException {
@@ -398,6 +399,7 @@ public class XMLHandler {
             }
 
             stepsDot[index1] = gc.getFinishedDotStep(index1);
+            gc.resetDotGraph();
         }
 
         // put the dot graphs in a txt file
