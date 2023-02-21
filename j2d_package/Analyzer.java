@@ -62,75 +62,89 @@ public class Analyzer {
         try {
             File f = new File(getClassLocation(class_type));
             BufferedReader bReader = new BufferedReader(new FileReader(f));
-            String line;
-            String[] parts;
+            String currline;
             boolean inClass = false;
             int braces = 0;
 
+            String method_list = "";
+
             // read though each line of code
-            while ((line = bReader.readLine()) != null) {
-                line = line.trim();
-                char isVisible = '+';
-                for (int i = 0; i < line.length(); i++) {
-                    if (line.charAt(i) == '{') {
+            while ((currline = bReader.readLine()) != null) {
+                currline = currline.trim();
+                currline = currline.replace("static", "");
+                System.out.println("Braces: " + braces + " | " + currline);
+                
+                if (braces == 1 && inClass) {
+                    method_list += currline + "\n";
+                }                
+
+                for (int i = 0; i < currline.length(); i++) {
+                    if (currline.charAt(i) == '{') {
                         braces++;
                     }
-                    if (line.charAt(i) == '}') {
+                    if (currline.charAt(i) == '}') {
                         braces--;
                     }
                 }
 
-                if (braces == 0) {
-                    inClass = false;
-                }
-                
-                // for simplicity
-                line = line.replace("static", "");
-                
-                if(line.contains("void main(String[] args)")) continue;
+                if (braces == 0) inClass = false;
 
+                if (currline.contains("class "+class_type)) inClass = true;
+
+            }
+
+            method_list = method_list.replace("{", "").replace("}", "");
+
+            System.out.println(method_list);
+
+            String[] lines = method_list.split("\n");
+
+            for (String line : lines) {
+                if(line.contains("void main")) continue;
+
+                char visibility = '+';
                 // select the symbol based of the accessibility
                 if (line.trim().startsWith("private"))
-                    isVisible = '-';
+                    visibility = '-';
                 if (line.trim().startsWith("protected"))
-                    isVisible = '#';
+                    visibility = '#';
+
                 line = line.replace("public", "").replace("private", "").replace("protected", "").trim();
-                parts = line.split(" ");
+                String[] parts = line.split(" ");
 
-                if (parts == null) {
-                    continue;
-                }
-                if (parts.length < 2) {
-                    continue;
-                }
-                if (parts[0] == null || parts[1] == null) {
-                    continue;
-                }
-
-                if (parts[0].equals("class") && parts[1].equals(class_type)) {
-                    inClass = true;
-                }
-                if (!inClass) continue;
-
-                // if contains ; -> var
-                if(braces != 1) continue;
-
-
+                // ; -> var
                 if (line.contains(";")) {
-                    attributes.put(parts[1].replace("=", "").replace(";", ""), isVisible + " " + parts[0]);
-                }
-                else if (line.contains("(") && line.contains(")")) {
+                    attributes.put(parts[1].replace("=", "").replace(";", ""), visibility + " " + parts[0]);
+                    continue;
+                
+                // () -> method
+                }else if (line.contains("(") && line.contains(")")) {
                     String retType, name, args;
+
+                    // constructor
+                    if(line.startsWith(class_type)) {
+                        name = parts[0].split("\\(")[0];
+                        retType = " ";
+                        String[] temp = line.split("\\(")[1].split("\\)");
+                        if (temp.length > 0)
+                            args = temp[0].replace(",", "°");
+                        else
+                            args = "";
+                        m = m + "mname:" + visibility + " " + name + "-mtype:" + retType + "-margs:" + args
+                            + ";";
+                        continue;
+                    }
+
+                    // method
                     name = parts[1].split("\\(")[0].trim();
                     retType = parts[0];
                     if (line.contains("()"))
                         args = "";
                     else
                         args = line.split("\\(")[1].split("\\)")[0].replace(",", "°");
-                        m = m + "mname:" + isVisible + " " + name + "-mtype:" + retType + "-margs:" + args
+                        m = m + "mname:" + visibility + " " + name + "-mtype:" + retType + "-margs:" + args
                             + ";";
                 }
-                
             }
 
             bReader.close();
