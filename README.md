@@ -18,8 +18,7 @@ How it works (step by step):
   - After running the program, the completed schemes are evaluated and everything is temporarily stored in an xml file for the sake of simplicity
   - The XML file is then processed into an HTML file or/and a txt file with dot graphs 
 
-Final product:
-  If selected:
+Final product (if selected):
   1. HTML file with object diagram(s)
   2. txt file with graphviz dot diagrams
   3. XML file with all the information
