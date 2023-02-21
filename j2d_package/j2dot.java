@@ -159,13 +159,11 @@ public class j2dot {
       if (delXMLBox.isSelected()) delXML = true;
       else delXML = false;
       m_mainclass = xField.getText().trim();
-      System.out.println(m_mainclass);
       dir = yField.getText().trim();
       if (!pField.getText().matches(" +"))
         pack = pField.getText().trim();
       else
         pack = null;
-      System.out.println(pack);
       dir = dir.replace("\\", File.separator) + File.separator;
       j2dot j = new j2dot();
 
@@ -188,7 +186,6 @@ public class j2dot {
 
       jdb_exc("thread 1");
 
-      int i = 0;
       while (true) {
         
         // prints here: BREAK by main
@@ -200,11 +197,9 @@ public class j2dot {
           isFinished = true;
         }
         if ((jdb_response).contains("application exited")) {
-          System.out.println("exited");
           isFinished = true;
         }
         if (isFinished) {
-          System.out.println("Finished");
           clean_up();
           break;
         }
@@ -240,7 +235,6 @@ public class j2dot {
   // for info:
   // https://docs.oracle.com/javase/7/docs/technotes/tools/windows/jdb.html
   String jdb_exc(String p_cmd) throws InterruptedException, IOException {
-    System.out.println("Command: " + p_cmd);
     m_jdb_in.println(p_cmd);
     m_jdb_in.flush();
 
@@ -261,7 +255,7 @@ public class j2dot {
 
   // prints response and returns if sort of check is needed
   private String jdb_getResponse() throws InterruptedException, IOException {
-    Thread.sleep(75);
+    Thread.sleep(50);
     String response = jdb_read();
     return response;
   }
