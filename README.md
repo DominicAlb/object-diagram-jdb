@@ -15,7 +15,7 @@ How it works (step by step):
     - Creates schemes from the information
   - The jdb process runs every line and the schemes are filled out with the required information
   - After running the program, the completed schemes are evaluated and everything is temporarily stored in an xml file for the sake of simplicity
-  - The XML file is then processed into an HTML file or a dot graph (dot graph not tested yet)
+  - The XML file is then processed into an HTML file or/and a txt file with dot graphs 
 
 Final product:
   If selected:
