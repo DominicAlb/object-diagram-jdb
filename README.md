@@ -1,6 +1,6 @@
 # object-diagram-jdb
 Uses jdb (Java Debugger) to run and analyze code in order to create an object diagram for every step (executed line) in a simple java file.
-This program is just a small school project that I did in my spare time. It's most likely not efficient and certainly won't work in every case.
+This program is just a small school project that I did in my spare time. It's most likely not efficient and maybe won't work in every case.
 
 Programmed and tested with JAVA SE 18.0.1 and jdb 18.0 on Windows 11 Pro
 
@@ -18,5 +18,7 @@ How it works (step by step):
   - The XML file is then processed into an HTML file or a dot graph (dot graph not tested yet)
 
 Final product:
+  If selected:
   1. HTML file with object diagram(s)
-  2. XML file with all the information
+  2. txt file with graphviz dot diagrams
+  3. XML file with all the information
