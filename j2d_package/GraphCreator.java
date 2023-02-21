@@ -106,7 +106,7 @@ public class GraphCreator {
     }
 
     public void createPrimitiveDotObject(String name, String type, String value) {
-        String obj = name + " [\n\tlabel = \"{ : " + type + "|+value = " + value + "}\"\n]\n";
+        String obj = name + " [\n\tlabel = \"{ : " + type + "|+value = " + value.replace("\"", "") + "}\"\n]\n";
         dotObjects = dotObjects + obj;
     }
 
