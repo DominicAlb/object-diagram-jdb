@@ -20,5 +20,5 @@ How it works (step by step):
 
 Final product (if selected):
   1. HTML file with object diagram(s)
-  2. txt file with graphviz dot diagrams
+  2. txt file with graphviz dot diagram(s)
   3. XML file with all the information
