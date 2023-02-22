@@ -102,7 +102,6 @@ public class j2dot {
       // PrintStream
       // to give jdb input commands
       m_jdb_in = new PrintStream(p_jdb.getOutputStream());
-      System.out.println(pack);
       if (pack != null) {
         xmlHandler = new XMLHandler(dir + pack + "\\", "ObjectState");
         analyzer = new Analyzer(dir + pack + "\\", m_mainclass);
