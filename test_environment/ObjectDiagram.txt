@@ -1,0 +1,1086 @@
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = null\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = null\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="human2"]
+	null -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 0"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = null\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = null\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="human2"]
+	null -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 1"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = null\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = null\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="human2"]
+	null -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 2"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = null\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = null\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	null -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="human2"]
+	null -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 3"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = null\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	null -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 4"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	null -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 5"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = null\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 6"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	null -> {} [arrowhead="f" dir="carA"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 7"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = false\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 8"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 9"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = null\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 10"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carA"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 11"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = false\l+ Car[] seesCars = [5acf9800]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	carA -> {} [arrowhead="b" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 12"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = true\l+ Car[] seesCars = [5acf9800]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = null\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	carA -> {} [arrowhead="b" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 13"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = true\l+ Car[] seesCars = [5acf9800]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = [5acf9800 4617c264]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	carA -> {} [arrowhead="b" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carA -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carC"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 14"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = true\l+ Car[] seesCars = [5acf9800]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = [5acf9800 4617c264]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	carA -> {} [arrowhead="b" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carA -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carC"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 15"
+;}
+digraph G {
+
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+null [
+	shape = "point"
+]
+human1Node [
+	shape = "point"
+]
+human1 [
+	label = "{76ed5528 : Human|+ Car inCar = 36baf30c\l+ boolean alive = false\l+ boolean injured = true\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+human2Node [
+	shape = "point"
+]
+human2 [
+	label = "{2c7b84de : Human|+ Car inCar = 4617c264\l+ boolean alive = true\l+ boolean injured = false\l|+ isAlive() : boolean\l+ setAlive(boolean alive) : void\l+ isInjured() : boolean\l+ setInjured(boolean injured) : void\l+ getInCar() : Car\l+ setInCar(Car inCar) : void\l+ Human(boolean alive,  boolean injured,  Car inCar) :  \l\l}"
+]
+carANode [
+	shape = "point"
+]
+carA [
+	label = "{5acf9800 : Car|+ Human human1 = 2c7b84de\l+ int amountDoors = 4\l+ boolean damaged = true\l+ Car[] seesCars = [4617c264]\l+ Car damagedCar = 4617c264\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carBNode [
+	shape = "point"
+]
+carB [
+	label = "{4617c264 : Car|+ Human human1 = 76ed5528\l+ int amountDoors = 2\l+ boolean damaged = true\l+ Car[] seesCars = [5acf9800]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+carCNode [
+	shape = "point"
+]
+carC [
+	label = "{36baf30c : Car|+ Human human1 = null\l+ int amountDoors = 6\l+ boolean damaged = false\l+ Car[] seesCars = [5acf9800 4617c264]\l+ Car damagedCar = null\l|+ getAmountDoors() : int\l+ setamountDoors(int amountDoors) : void\l+ getHuman1() : Human\l+ setHuman1(Human human1) : void\l+ Car() :  \l+ setDamagedCar(Car damagedCar) : void\l+ Car[]() :  \l+ setSeesCars(Car[] seesCars) : void\l+ isDamaged() : boolean\l+ setdDamaged(boolean damaged) : void\l+ Car(int amountDoors,  Human human1,  Car damagedCar,  Car[] seesCars,  boolean damaged) :  \l+ Car[]() :  \l\l}"
+]
+iNode [
+	shape = "point"
+]
+i [
+	label = "{ : int|+value = 10}"
+]
+dNode [
+	shape = "point"
+]
+d [
+	label = "{ : double|+value = 10.2}"
+]
+	human1Node -> human1 [label=" human1" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	human2Node -> human2 [label=" human2" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carANode -> carA [label=" carA" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carBNode -> carB [label=" carB" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	carCNode -> carC [label=" carC" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	iNode -> i [label=" i" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	dNode -> d [label=" d" arrowhead="vee" arrowsize=0.5 fontsize="12pt"]
+	null -> {} [arrowhead="f" dir="carB"]
+	carA -> {} [arrowhead="b" dir="carB"]
+	human1 -> {} [arrowhead="f" dir="carB"]
+	null -> {} [arrowhead="f" dir="carC"]
+	carA -> {} [arrowhead="f" dir="carC"]
+	carB -> {} [arrowhead="f" dir="carC"]
+	human2 -> {} [arrowhead="f" dir="carA"]
+	carB -> {} [arrowhead="f" dir="human2"]
+	carC -> {} [arrowhead="f" dir="human1"]
+
+	labelloc="t";
+	label="Step: 16"
+;}
