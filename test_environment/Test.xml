@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<code>
+    <step id="0">
+        <object id="{0}" name="carB" type="Car">
+            <attr id="damagedCar" type="+ Car">1</attr>
+            <attr id="seesCars" type="+ Car[]">2</attr>
+            <attr id="damaged" type="+ boolean">3</attr>
+            <attr id="amountDoors" type="+ int">4</attr>
+            <attr id="human1" type="+ Human">5</attr>
+            <method args="" id="+ getAmountDoors">int</method>
+            <method args="int amountDoors" id="+ setamountDoors">void</method>
+            <method args="" id="+ getHuman1">Human</method>
+            <method args="Human human1" id="+ setHuman1">void</method>
+            <method args="" id="+ Car"> </method>
+            <method args="Car damagedCar" id="+ setDamagedCar">void</method>
+            <method args="" id="+ Car[]"> </method>
+            <method args="Car[] seesCars" id="+ setSeesCars">void</method>
+            <method args="" id="+ isDamaged">boolean</method>
+            <method args="boolean damaged" id="+ setdDamaged">void</method>
+            <method args="int amountDoors° Human human1° Car damagedCar° Car[] seesCars° boolean damaged" id="+ Car"> </method>
+            <method args="" id="+ Car[]"> </method>
+        </object>
+        <object id="{0}" name="carC" type="Car">
+            <attr id="damagedCar" type="+ Car">1</attr>
+            <attr id="seesCars" type="+ Car[]">2</attr>
+            <attr id="damaged" type="+ boolean">3</attr>
+            <attr id="amountDoors" type="+ int">4</attr>
+            <attr id="human1" type="+ Human">5</attr>
+            <method args="" id="+ getAmountDoors">int</method>
+            <method args="int amountDoors" id="+ setamountDoors">void</method>
+            <method args="" id="+ getHuman1">Human</method>
+            <method args="Human human1" id="+ setHuman1">void</method>
+            <method args="" id="+ Car"> </method>
+            <method args="Car damagedCar" id="+ setDamagedCar">void</method>
+            <method args="" id="+ Car[]"> </method>
+            <method args="Car[] seesCars" id="+ setSeesCars">void</method>
+            <method args="" id="+ isDamaged">boolean</method>
+            <method args="boolean damaged" id="+ setdDamaged">void</method>
+            <method args="int amountDoors° Human human1° Car damagedCar° Car[] seesCars° boolean damaged" id="+ Car"> </method>
+            <method args="" id="+ Car[]"> </method>
+        </object>
+        <object id="{0}" name="carA" type="Car">
+            <attr id="damagedCar" type="+ Car">1</attr>
+            <attr id="seesCars" type="+ Car[]">2</attr>
+            <attr id="damaged" type="+ boolean">3</attr>
+            <attr id="amountDoors" type="+ int">4</attr>
+            <attr id="human1" type="+ Human">5</attr>
+            <method args="" id="+ getAmountDoors">int</method>
+            <method args="int amountDoors" id="+ setamountDoors">void</method>
+            <method args="" id="+ getHuman1">Human</method>
+            <method args="Human human1" id="+ setHuman1">void</method>
+            <method args="" id="+ Car"> </method>
+            <method args="Car damagedCar" id="+ setDamagedCar">void</method>
+            <method args="" id="+ Car[]"> </method>
+            <method args="Car[] seesCars" id="+ setSeesCars">void</method>
+            <method args="" id="+ isDamaged">boolean</method>
+            <method args="boolean damaged" id="+ setdDamaged">void</method>
+            <method args="int amountDoors° Human human1° Car damagedCar° Car[] seesCars° boolean damaged" id="+ Car"> </method>
+            <method args="" id="+ Car[]"> </method>
+        </object>
+        <object name="d" type="double">{0}</object>
+        <object name="i" type="int">{0}</object>
+        <object id="{0}" name="human2" type="Human">
+            <attr id="injured" type="+ boolean">1</attr>
+            <attr id="alive" type="+ boolean">2</attr>
+            <attr id="inCar" type="+ Car">3</attr>
+            <method args="" id="+ isAlive">boolean</method>
+            <method args="boolean alive" id="+ setAlive">void</method>
+            <method args="" id="+ isInjured">boolean</method>
+            <method args="boolean injured" id="+ setInjured">void</method>
+            <method args="" id="+ getInCar">Car</method>
+            <method args="Car inCar" id="+ setInCar">void</method>
+            <method args="boolean alive° boolean injured° Car inCar" id="+ Human"> </method>
+        </object>
+        <object id="{0}" name="human1" type="Human">
+            <attr id="injured" type="+ boolean">1</attr>
+            <attr id="alive" type="+ boolean">2</attr>
+            <attr id="inCar" type="+ Car">3</attr>
+            <method args="" id="+ isAlive">boolean</method>
+            <method args="boolean alive" id="+ setAlive">void</method>
+            <method args="" id="+ isInjured">boolean</method>
+            <method args="boolean injured" id="+ setInjured">void</method>
+            <method args="" id="+ getInCar">Car</method>
+            <method args="Car inCar" id="+ setInCar">void</method>
+            <method args="boolean alive° boolean injured° Car inCar" id="+ Human"> </method>
+        </object>
+    </step>
+</code>
