@@ -120,9 +120,14 @@ public class GraphCreator {
         dotConnections = dotConnections + s;
     }
 
-    public void connectDotObjectToObjects(String arrowType, String dir, String obj1, String... obj2) {
-        String s = "\t" + obj1 + " -> {" + String.join(" ", obj2) + "} [arrowhead=\"" + arrowType + "\" dir=\"" + dir
-                + "\"]\n";
+    public void connectDotObjectToObjects(String obj1, String dir, String... obj2) {
+        String label = "";
+        if(obj2 != null && obj2.length == 1 && obj2.equals( "null")) {
+            label = "label=\"null\"";
+        }      
+        
+        String s = "\t" + obj1 + " -> {" + String.join(" ", obj2) + "} [arrowhead=\"vee\" arrowsize=0.5 fontsize=\"12pt\" dir=\"" + dir
+                + "\"" + label + "]\n";
         dotConnections = dotConnections + s;
     }
 
