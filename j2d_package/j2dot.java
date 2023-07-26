@@ -35,6 +35,8 @@ public class j2dot {
   static boolean createHTML;
   static boolean createDot;
   static boolean delXML;
+  static boolean loggingIsEnabled;
+  int main_class_lines;
 
   /*
    * made by DominicAlb
@@ -110,8 +112,9 @@ public class j2dot {
         analyzer = new Analyzer(dir, m_mainclass);
       }
       xmlInfo = new ArrayList<List<String>>();
+      if(loggingIsEnabled) System.out.println("[Info] Scan file for variables");
       schemes = analyzer.getSchemesFromFile();
-
+      main_class_lines = analyzer.getLinesAmount()-1;
     } catch (Exception e) {
       e.printStackTrace();
 
@@ -126,7 +129,8 @@ public class j2dot {
     JCheckBox htmlBox = new JCheckBox("HTML", true); 
     JCheckBox dotBox = new JCheckBox("DOT"); 
     JCheckBox delXMLBox = new JCheckBox("Delete XML file after process"); 
-
+    JCheckBox logBox = new JCheckBox("Log into console"); 
+    
     JPanel myPanel = new JPanel();
     myPanel.add(new JLabel("class:"));
     myPanel.add(xField);
@@ -139,6 +143,7 @@ public class j2dot {
     myPanel.add(htmlBox);
     myPanel.add(dotBox);
     myPanel.add(delXMLBox);
+    myPanel.add(logBox);
 
     int result = JOptionPane.showConfirmDialog(null, myPanel,
         "Please Enter class and path - eg: class: Test  package: <Empty>  dir: C:\\  or class: Test package: Test   dir: C:\\",
@@ -151,12 +156,16 @@ public class j2dot {
       else createDot = false;
 
       if(!createHTML && !createDot) {
-        System.out.println("Atleast one setting has to be enabled");
+        System.out.println("[Error] Atleast one setting has to be enabled");
         return;
       }
 
       if (delXMLBox.isSelected()) delXML = true;
       else delXML = false;
+
+      if (logBox.isSelected()) loggingIsEnabled = true;
+      else loggingIsEnabled = false;
+      
       m_mainclass = xField.getText().trim();
       dir = yField.getText().trim();
       if (!pField.getText().matches(" +"))
@@ -166,6 +175,7 @@ public class j2dot {
       dir = dir.replace("\\", File.separator) + File.separator;
       j2dot j = new j2dot();
 
+      if(loggingIsEnabled) System.out.println("[Info] Start Process");
       j.run();
     }
 
@@ -173,6 +183,7 @@ public class j2dot {
 
   void run() {
     try {
+      if(loggingIsEnabled) System.out.println("[Info] Set break point");
       // set break point in main classes main()-method
       if (pack != null) {
         jdb_exc("stop in " + pack + "." + m_mainclass + ".main");
@@ -183,8 +194,11 @@ public class j2dot {
       //skip first loop because nothing is loaded yet
       jdb_exc("next");
 
+      if(loggingIsEnabled) System.out.println("[Info] Getting Data from file (1/" + main_class_lines+")");
+
       jdb_exc("thread 1");
 
+      int loops = 1;
       while (true) {
         
         // prints here: BREAK by main
@@ -205,26 +219,34 @@ public class j2dot {
         String data = jdb_exc("locals");
 
         processData(data);
-        System.out.println("got Data" + i++);
+        if(loggingIsEnabled) System.out.println("[Info] Getting Data from file (" + loops + "/" + main_class_lines+")");
 
       }
-      System.out.println("Write to XML");
+      if (loggingIsEnabled) System.out.println("[Info] Write to XML");
       xmlHandler.writeXML(xmlInfo);
 
       if(createHTML) {
-        System.out.println("Creating HTML file");
+        if (loggingIsEnabled) System.out.println("[Info] Creating HTML file");
         xmlHandler.createHTMLGraphFromXML();
       }
       
       if(createDot) {
-        System.out.println("Creating Dot file");
+        if (loggingIsEnabled) System.out.println("[Info] Creating Dot file");
         xmlHandler.createDotGraphFromXML();
       }
  
       if(delXML) {
-        System.out.println("Deleting XML file");
+        if (loggingIsEnabled) System.out.println("[Info] Deleting XML file");
         xmlHandler.delXMLFile();
+      }else {
+        if (loggingIsEnabled) {
+          String dir = xmlHandler.getXMLDir();
+          System.out.println("[Info] XML is saved at <" + dir + ">");
+        }
       }
+
+      if (loggingIsEnabled)
+        System.out.println("[Info] Process finished");
       
     } catch (Exception e) {
     }
