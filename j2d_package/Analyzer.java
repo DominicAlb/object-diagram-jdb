@@ -22,11 +22,13 @@ public class Analyzer {
     HashMap<String, String> primitiveVars;
     HashMap<String, String> methods;
     String main_file_name;
+    int main_class_lines;
     String dir;
 
     public Analyzer(String dir, String main_file_name) {
         this.dir = dir;
         this.main_file_name = main_file_name;
+        main_class_lines = 0;
         classVars = new HashMap<String, String>();
         primitiveVars = new HashMap<String, String>();
         methods = new HashMap<String, String>();
@@ -240,6 +242,7 @@ public class Analyzer {
                     } else if (isPrimitive(parts[0])) {
                         primitiveVars.put(parts[1].replace("=", "").replace(";", ""), parts[0]);
                     }
+                    if(line.charAt(0) != '/') main_class_lines++;
                 }
 
             }
