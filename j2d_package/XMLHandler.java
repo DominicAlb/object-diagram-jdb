@@ -497,7 +497,6 @@ public class XMLHandler {
         DOMSource source = new DOMSource(doc);
 
         File f = new File(dir + className + ".xml");
-        System.out.println(dir + className + ".xml");
         Result result = new StreamResult(f);
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
@@ -505,6 +504,10 @@ public class XMLHandler {
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
         transformer.transform(source, result);
 
+    }
+
+    public String getXMLDir() {
+        return dir + className + ".xml";
     }
     
     public void delXMLFile() {
